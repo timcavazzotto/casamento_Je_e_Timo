@@ -12,3 +12,11 @@ h1, h2, h3, h4 {
 .bg-marble {
   background-image: url('https://www.transparenttextures.com/patterns/marble.png');
 }
+
+.bg-marble {
+  background-color: #e8e6da;
+}
+.btn-verde {
+  background-color: #8e9788;
+  color: #F5F5F5;
+}
