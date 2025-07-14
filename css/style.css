@@ -1,9 +1,8 @@
 body {
-  font-family: 'Montserrat' sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Montserrat', serif;
 }
 h1, h2, h3, h4 {
-  font-family: 'Brown Sugar', serif;
+  font-family: 'Brown Sugar', sans-serif;
 }
 .hero-bg {
   background-image: url('https://source.unsplash.com/1600x900/?italy,lake');
