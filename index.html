@@ -4,13 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Casamento Jessica & Timothy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+
+  <!-- Fontes personalizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Brown+Sugar&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', serif;
+      background-color: #F5F5F5;
+      color: #1A1A1A;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Brown Sugar', sans-serif;
+    }
+    .bg-marble {
+      background-color: #e8e6da;
+    }
+    .card {
+      background-color: #F5F5F5;
+      color: #1A1A1A;
+    }
+    .bg-personalizada {
+      background-color: #c7baa7;
+    }
+    .btn-verde {
+      background-color: #8e9788;
+      color: #F5F5F5;
+    }
+    .btn-verde:hover {
+      background-color: #7d8679;
+    }
+    .text-title {
+      color: #1A1A1A;
+    }
+  </style>
 </head>
-<body class="bg-marble text-gray-800">
-  <div class="text-center bg-pink-100 py-3 text-sm font-semibold">
+<body class="bg-marble">
+  <div class="text-center py-3 text-sm font-semibold bg-personalizada">
     Faltam <span id="countdown"></span> para o nosso grande dia!
   </div>
 
@@ -18,18 +53,18 @@
   <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-6 py-12 relative">
     <div class="absolute inset-0 bg-white bg-opacity-80 backdrop-blur-sm z-0"></div>
     <div class="bg-white bg-opacity-90 rounded-xl p-6 shadow-lg w-full max-w-3xl z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Ajude-nos a realizar nosso sonho italiano</h1>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-title">Ajude-nos a realizar nosso sonho italiano</h1>
       <p class="text-xl mb-6">Jessica Kunz & Timothy Cavazzotto • 06 de setembro de 2025 • Casa Terra Café</p>
-      <a href="#presentes" class="bg-pink-200 hover:bg-pink-300 text-gray-800 px-6 py-3 rounded-full font-semibold transition">Escolher Presente</a>
+      <a href="#presentes" class="btn-verde px-6 py-3 rounded-full font-semibold transition">Escolher Presente</a>
     </div>
     <div class="mt-10 z-10 animate-bounce">
-      <a href="#presentes" class="text-3xl text-gray-600">⬇️</a>
+      <a href="#presentes" class="text-3xl text-title">⬇️</a>
     </div>
   </header>
 
   <!-- Nossa História -->
-  <section class="py-16 px-6 bg-white text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4">Nossa História</h2>
+  <section class="py-16 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-title">Nossa História</h2>
     <p class="max-w-3xl mx-auto mb-8">Desde nosso primeiro encontro, sonhamos com uma lua de mel inesquecível. A Itália, com sua arte, sabores e paisagens, sempre foi o destino dos nossos sonhos. Agora, com sua ajuda, ele pode se tornar realidade.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <img src="https://source.unsplash.com/400x300/?italy,rome" alt="Roma" class="rounded-lg shadow" />
@@ -39,32 +74,32 @@
   </section>
 
   <!-- Presentes -->
-  <section id="presentes" class="py-20 bg-gradient-to-b from-pink-50 to-blue-50 px-6" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-center mb-10">Escolha sua Contribuição</h2>
+  <section id="presentes" class="py-20 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-10 text-title">Escolha sua Contribuição</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="card bg-white rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(100)">
+      <div class="card rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(100)">
         <div class="text-5xl mb-3">☕</div>
-        <h3 class="text-xl font-semibold">R$ 100 - Cappuccino em Roma</h3>
+        <h3 class="text-xl font-semibold text-title">R$ 100 - Cappuccino em Roma</h3>
         <p class="mt-2">Um café matinal com vista para monumentos eternos</p>
       </div>
-      <div class="card bg-white rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(200)">
+      <div class="card rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(200)">
         <div class="text-5xl mb-3">🍦</div>
-        <h3 class="text-xl font-semibold">R$ 200 - Gelato em Florença</h3>
+        <h3 class="text-xl font-semibold text-title">R$ 200 - Gelato em Florença</h3>
         <p class="mt-2">Sabores únicos pelas ruas renascentistas</p>
       </div>
-      <div class="card bg-white rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(300)">
+      <div class="card rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(300)">
         <div class="text-5xl mb-3">🚣‍♂️</div>
-        <h3 class="text-xl font-semibold">R$ 300 - Gôndola em Veneza</h3>
+        <h3 class="text-xl font-semibold text-title">R$ 300 - Gôndola em Veneza</h3>
         <p class="mt-2">Romance navegando pelos canais venezianos</p>
       </div>
-      <div class="card bg-white rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(400)">
+      <div class="card rounded-2xl p-6 shadow text-center cursor-pointer" onclick="openModal(400)">
         <div class="text-5xl mb-3">🍷</div>
-        <h3 class="text-xl font-semibold">R$ 400 - Vinhos na Toscana</h3>
+        <h3 class="text-xl font-semibold text-title">R$ 400 - Vinhos na Toscana</h3>
         <p class="mt-2">Degustação entre vinhedos dourados</p>
       </div>
-      <div class="card bg-white rounded-2xl p-6 shadow text-center cursor-pointer col-span-full sm:col-span-2 lg:col-span-1" onclick="openModal(500)">
+      <div class="card rounded-2xl p-6 shadow text-center cursor-pointer col-span-full sm:col-span-2 lg:col-span-1" onclick="openModal(500)">
         <div class="text-5xl mb-3">🍝</div>
-        <h3 class="text-xl font-semibold">R$ 500 - Jantar em Cinque Terre</h3>
+        <h3 class="text-xl font-semibold text-title">R$ 500 - Jantar em Cinque Terre</h3>
         <p class="mt-2">Uma refeição inesquecível à beira-mar</p>
       </div>
     </div>
@@ -74,17 +109,17 @@
   <div id="pixModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
     <div class="bg-white rounded-xl p-8 text-center w-11/12 max-w-md relative">
       <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl font-bold">&times;</button>
-      <h3 class="text-2xl font-bold mb-4">Contribuição de <span id="valorSelecionado"></span></h3>
+      <h3 class="text-2xl font-bold mb-4 text-title">Contribuição de <span id="valorSelecionado"></span></h3>
       <img src="" alt="QR Code PIX" class="mx-auto mb-4" id="qrCodeImg" />
       <p class="mb-2 text-sm">Chave PIX: <strong>jessica.timothy@pix.com</strong></p>
       <p class="mb-4">Muito obrigado por fazer parte deste sonho!</p>
-      <button onclick="closeModal()" class="bg-blue-200 hover:bg-blue-300 px-4 py-2 rounded-full">Fechar</button>
+      <button onclick="closeModal()" class="btn-verde px-4 py-2 rounded-full">Fechar</button>
     </div>
   </div>
 
   <!-- Agradecimento -->
-  <section class="py-16 px-6 text-center bg-white" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4">Com carinho, nosso agradecimento</h2>
+  <section class="py-16 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-title">Com carinho, nosso agradecimento</h2>
     <p class="max-w-3xl mx-auto mb-8">Obrigado por fazer parte do nosso dia especial e por nos ajudar a criar memórias únicas na bella Italia. <em>Ogni momento</em> será ainda mais especial sabendo que vocês estão conosco nesta jornada.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <img src="https://source.unsplash.com/400x300/?italy,cinque-terre" alt="Cinque Terre" class="rounded-lg shadow" />
@@ -94,7 +129,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-center py-6 text-sm">
+  <footer class="bg-personalizada text-center py-6 text-sm">
     <p>Jessica Kunz & Timothy Cavazzotto • 06/09/2025 • Casa Terra Café</p>
   </footer>
 
@@ -102,5 +137,6 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
 
 
